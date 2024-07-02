@@ -4,6 +4,8 @@ import Services from "./components/Services";
 import Trusted from "./components/Trusted";
 import ServicesDropDown from "./components/ServicesDropDown";
 import BestServices from "./components/BestServices";
+import ServicesWeOffer from "./components/ServicesWeOffer";
+import PackageTime from "./components/PackageTime";
 
 const Home = () => {
   const data = {
@@ -24,6 +26,8 @@ const Home = () => {
       <ServicesDropDown />
       <Services />
       <BestServices />
+      <ServicesWeOffer />
+      <PackageTime />
     </>
   );
 };

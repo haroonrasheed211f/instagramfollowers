@@ -1,88 +1,88 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+// import React, { useState } from "react";
+// import styled from "styled-components";
 
-const ButtonWithDropdown = ({ imageSrc, buttonText, dropdownContent }) => {
-  const [isOpen, setIsOpen] = useState(false);
+// const ButtonWithDropdown = ({ imageSrc, buttonText, dropdownContent }) => {
+//   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+//   const toggleDropdown = () => {
+//     setIsOpen(!isOpen);
+//   };
 
-  const closeDropdown = () => {
-    setIsOpen(false);
-  };
+//   const closeDropdown = () => {
+//     setIsOpen(false);
+//   };
 
-  return (
-    <Wrapper onMouseLeave={closeDropdown}>
-      <StyledButton onClick={toggleDropdown}>
-        <img src={imageSrc} alt="icon" />
-        <span>{buttonText}</span>
-      </StyledButton>
-      {isOpen && <DropdownMenu>{dropdownContent}</DropdownMenu>}
-    </Wrapper>
-  );
-};
+//   return (
+//     <Wrapper onMouseLeave={closeDropdown}>
+//       <StyledButton onClick={toggleDropdown}>
+//         <img src={imageSrc} alt="icon" />
+//         <span>{buttonText}</span>
+//       </StyledButton>
+//       {isOpen && <DropdownMenu>{dropdownContent}</DropdownMenu>}
+//     </Wrapper>
+//   );
+// };
 
-const Wrapper = styled.div`
-  position: relative;
-  display: inline-block;
-`;
+// const Wrapper = styled.div`
+//   position: relative;
+//   display: inline-block;
+// `;
 
-const StyledButton = styled.button`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  background-color: rgb(98 84 243);
-  color: rgb(255 255 255);
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
-  border: none;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
+// const StyledButton = styled.button`
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   background-color: rgb(98 84 243);
+//   color: rgb(255 255 255);
+//   padding: 0.5rem 1rem; /* Adjust padding as needed */
+//   border: none;
+//   text-transform: uppercase;
+//   text-align: center;
+//   cursor: pointer;
+//   transition: all 0.3s ease;
 
-  img {
-    margin-right: 0.5rem; /* Adjust margin as needed */
-    width: 20px; /* Fixed width for the image */
-    height: 20px; /* Fixed height for the image */
-  }
+//   img {
+//     margin-right: 0.5rem; /* Adjust margin as needed */
+//     width: 20px; /* Fixed width for the image */
+//     height: 20px; /* Fixed height for the image */
+//   }
 
-  span {
-    margin-left: 0.5rem; /* Adjust margin as needed */
-  }
+//   span {
+//     margin-left: 0.5rem; /* Adjust margin as needed */
+//   }
 
-  &:hover,
-  &:active {
-    box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
-    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
-    transform: scale(0.96);
-  }
-`;
+//   &:hover,
+//   &:active {
+//     box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
+//     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+//     transform: scale(0.96);
+//   }
+// `;
 
-const DropdownMenu = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-`;
+// const DropdownMenu = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   background-color: white;
+//   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+//   z-index: 1;
+// `;
 
-const DropdownItem = styled.a`
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.3s ease;
+// const DropdownItem = styled.a`
+//   color: black;
+//   padding: 12px 16px;
+//   text-decoration: none;
+//   display: block;
+//   transition: background-color 0.3s ease;
 
-  &:hover {
-    background-color: #f1f1f1;
-  }
-`;
+//   &:hover {
+//     background-color: #f1f1f1;
+//   }
+// `;
 
-export default ButtonWithDropdown;
+// export default ButtonWithDropdown;
 
 // only border color add
 
@@ -186,7 +186,7 @@ export default ButtonWithDropdown;
 
 /* button background animation */
 
-/* import React, { useState } from "react";
+import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 const ButtonWithDropdown = ({ imageSrc, buttonText, dropdownContent }) => {
@@ -291,4 +291,4 @@ const DropdownItem = styled.a`
   }
 `;
 
-export default ButtonWithDropdown; */
+export default ButtonWithDropdown;

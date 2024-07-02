@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
    background-color: rgb(24 24 29);
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -91,7 +92,7 @@ ${"" /* resuable code section  */}
 
 .grid {
   display: grid;
-  gap: 9rem;
+  /* gap: 4rem; */
 }
 
 .grid-two-column {

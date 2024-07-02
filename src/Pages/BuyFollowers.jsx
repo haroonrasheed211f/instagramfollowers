@@ -30,7 +30,8 @@
 //   justify-content: center;
 //   align-items: center;
 //   height: 100vh;
-//   background-color: #f8f9fa;
+//   background-color: #ffffff;
+//   margin-top: 2rem;
 
 //   .card {
 //     background-color: white;
@@ -49,7 +50,7 @@
 //   }
 
 //   .option {
-//     background-color: #f3f3f3;
+//     background-color: #f2efef;
 //     border-radius: 8px;
 //     padding: 24px;
 //     text-align: center;
@@ -106,15 +107,15 @@
 // export default BuyFollowers;
 
 // BuyFollowers.js
-// BuyFollowers.js
 import React from "react";
 import options from "../data/options.json";
+import { Button } from "../styles/Button";
 
 const BuyFollowers = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-yellow-100">
-      <div className="bg-black shadow-lg rounded-lg p-6 c text-center ">
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-8 mb-4">
+    <div className="flex justify-center items-center min-h-screen bg-white">
+      <div className="bg-stone-100 shadow-lg rounded-lg p-6 c text-center ">
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 mb-4">
           {options.map((option, index) => (
             <div
               key={index}
@@ -128,9 +129,7 @@ const BuyFollowers = () => {
           ))}
         </div>
         <div className="text-6xl font-bold mb-4">$1.38</div>
-        <button className="bg-gradient-to-r from-purple-400 via-blue-500 to-blue-800 text-white border-none py-3 px-6 rounded-lg text-6xl transition duration-300 ease-in-out hover:from-blue-800 hover:via-blue-500 hover:to-purple-400">
-          Order Now
-        </button>
+        <Button> Order Now</Button>
       </div>
     </div>
   );
