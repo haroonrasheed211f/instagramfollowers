@@ -13,6 +13,7 @@ import Otherservices from "./Otherservices";
 import Threads from "./Threads";
 import InstagramComments from "./Pages/BuyFollowers";
 import BuyFollowers from "./Pages/BuyFollowers";
+import GetStarted from "./Pages/GetStarted";
 
 const App = () => {
   const theme = {
@@ -49,6 +50,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/singleproduct/:id" element={<Singleproduct />} />
           <Route path="/buy" element={<BuyFollowers />} />
+          <Route path="/getstarted" element={<GetStarted />} />
         </Routes>
         <Footer />
       </Router>

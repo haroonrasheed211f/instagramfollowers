@@ -3,7 +3,12 @@ import "../styles/Tailwind.css"; // Make sure to import the CSS file
 
 const PackageTime = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
+    <div
+      className="container flex flex-col items-center justify-center min-h-screen background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ p-4"
+    >
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-center">
         How to Buy a Package?
       </h1>

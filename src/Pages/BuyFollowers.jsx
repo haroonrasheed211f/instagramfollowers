@@ -110,28 +110,38 @@
 import React from "react";
 import options from "../data/options.json";
 import { Button } from "../styles/Button";
+import GetStarted from "./GetStarted";
+import { useNavigate } from "react-router-dom";
 
 const BuyFollowers = () => {
+  const navigate = useNavigate();
+
+  const handleOrderNowClick = () => {
+    navigate("/getstarted"); // Make sure your route is set up correctly
+  };
+
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white">
-      <div className="bg-stone-100 shadow-lg rounded-lg p-6 c text-center ">
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 mb-4">
-          {options.map((option, index) => (
-            <div
-              key={index}
-              className={`bg-gray-200 rounded-lg p-6 cursor-pointer transition duration-300 ease-in-out hover:bg-red-600 hover:text-white ${
-                option.highlighted ? "bg-red-600 text-white" : ""
-              } w-45 h-45`}
-            >
-              <div className="text-2xl font-bold">{option.amount}</div>
-              <div className="text-3xl mt-2">{option.label}</div>
-            </div>
-          ))}
+    <>
+      <div className="flex justify-center items-center min-h-screen bg-white">
+        <div className="bg-stone-100 shadow-lg rounded-lg p-6 c text-center ">
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 mb-4">
+            {options.map((option, index) => (
+              <div
+                key={index}
+                className={`bg-gray-200 rounded-lg p-6 cursor-pointer transition duration-300 ease-in-out hover:bg-red-600 hover:text-white ${
+                  option.highlighted ? "bg-red-600 text-white" : ""
+                } w-45 h-45`}
+              >
+                <div className="text-2xl font-bold">{option.amount}</div>
+                <div className="text-3xl mt-2">{option.label}</div>
+              </div>
+            ))}
+          </div>
+          <div className="text-6xl font-bold mb-4">$1.38</div>
+          <Button onClick={handleOrderNowClick}>Order Now</Button>
         </div>
-        <div className="text-6xl font-bold mb-4">$1.38</div>
-        <Button> Order Now</Button>
       </div>
-    </div>
+    </>
   );
 };
 

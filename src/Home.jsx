@@ -6,6 +6,7 @@ import ServicesDropDown from "./components/ServicesDropDown";
 import BestServices from "./components/BestServices";
 import ServicesWeOffer from "./components/ServicesWeOffer";
 import PackageTime from "./components/PackageTime";
+import VideoCarousel from "./components/VideoCarousel";
 
 const Home = () => {
   const data = {
@@ -28,6 +29,7 @@ const Home = () => {
       <BestServices />
       <ServicesWeOffer />
       <PackageTime />
+      <VideoCarousel />
     </>
   );
 };

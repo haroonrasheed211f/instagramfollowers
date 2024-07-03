@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
+import BuyFollowers from "./Pages/BuyFollowers";
 
 const Tiktok = () => {
   const data = {
@@ -9,7 +10,12 @@ const Tiktok = () => {
     btnservice: ["Tiktok Followers", "Tiktok Likes", "Tiktok Comments"],
   };
 
-  return <HeroSection myData={data} />;
+  return (
+    <>
+      <HeroSection myData={data} />;
+      <BuyFollowers />;
+    </>
+  );
 };
 
 export default Tiktok;

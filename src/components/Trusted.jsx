@@ -91,7 +91,7 @@ import { Button } from "../styles/Button";
 const Trusted = () => {
   return (
     <Wrapper className="brand-section">
-      <div className="container">
+      <div className="container ">
         <h3>Trusted By 1000+ Companies</h3>
         <div className="brand-section-slider">
           <div className="slide-track">
@@ -176,7 +176,19 @@ const Trusted = () => {
 
 const Wrapper = styled.section`
   padding: 9rem 0;
-  background-color: ${({ theme }) => theme.colors.bg};
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(
+    to right,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   .brand-section {
     padding: 12rem 0 0 0;
