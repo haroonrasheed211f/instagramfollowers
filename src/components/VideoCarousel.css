@@ -1,3 +1,31 @@
+/* .video-carousel-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-container {
+  padding: 10px;
+}
+
+.slick-slide {
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.5;
+}
+
+.slick-center .slick-slide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+} */
+
 .video-carousel-container {
   text-align: center;
   padding: 20px;
@@ -6,38 +34,31 @@
 }
 
 .video-container {
+  position: relative;
   transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out,
     opacity 0.5s ease-in-out;
-  opacity: 0.5;
-  position: relative;
-  z-index: 0;
-  transform: scale(0.8);
-  margin: 0 10px;
+  margin: 0 -15%; /* Adjust this value for overlap */
+  width: 70%; /* Ensure each video takes 70% of its container width */
 }
 
-.video-container.active {
-  transform: scale(1);
-  opacity: 1;
-  z-index: 2;
-}
-
-.slick-center .video-container {
-  transform: scale(1);
-  opacity: 1;
-  z-index: 2;
+.slick-list {
+  overflow: visible; /* Allow overflow to show partially hidden videos */
 }
 
 .slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0.8);
-  opacity: 0.5;
+  opacity: 0.5; /* Reduce opacity of non-center slides */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  z-index: 1; /* Ensure slides stack correctly */
 }
 
-.slick-slide.slick-center {
-  transform: scale(1);
-  opacity: 1;
+.slick-center .slick-slide {
+  opacity: 1; /* Increase opacity of the center slide */
+  z-index: 2; /* Bring the center slide to the front */
+}
+
+.slick-center .video-container {
+  transform: scale(1.05); /* Scale up the center slide slightly */
+  z-index: 2; /* Bring the center slide to the front */
 }
 
 .slick-dots {

@@ -14,7 +14,9 @@ const BestServices = () => {
               />
             </figure>
           </div>
-          <div className="hero-section-data animate-slide-in-left">
+
+          <div className="hero-section-data animate-slide-in-left  ">
+            <img src="" />
             <p className="text-2xl font-semibold mb-2">LOGO.io</p>
             <h1 className="text-4xl font-bold capitalize mb-4">
               See why we are the best!

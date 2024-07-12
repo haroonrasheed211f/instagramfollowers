@@ -7,19 +7,19 @@ const services = [
     title: "Fast Delivery",
     description:
       "We're lightning fast! As soon as your sign up and make your first payment, we begin boosting your Instagram account and finding new followers, likes, views for your account in a matter of minutes. New followers come in at a fast pace as we continue boosting your posts until your purchased amount is reached.",
-    image: "./images/fast_delivery.webp", // Replace with the actual path to your image
+    image: "./images/fastdelivery.gif", // Replace with the actual path to your image
   },
   {
     title: "Awesome Customer Support",
     description:
       "Technical support for all our services 24/7. To help you, if you have some query, drop an email to our support team. We are delighted to assist you.",
-    image: "./images/fast_delivery.webp",
+    image: "./images/awesomecustomersupport.gif",
   },
   {
     title: "High Quality Services",
     description:
       "We only give you the highest quality Instagram followers, likes, views. Quality is one of our most important goals at Goread.io. We always make sure that your Instagram followers are long-lasting, reliable, and that the packages are affordable.",
-    image: "./images/fast_delivery.webp",
+    image: "./images/HighQualityServices.gif",
   },
   {
     title: "Privacy & Safety",
@@ -31,7 +31,7 @@ const services = [
     title: "Our Guarantee",
     description:
       "Satisfaction is our number one priority. If you are not happy, you will receive a 100% money back guarantee. This is why we stand high and remain the best place to buy all our services.",
-    image: "../images/sercure.gif",
+    image: "../images/grun.gif",
   },
   {
     title: "Secure Payments",

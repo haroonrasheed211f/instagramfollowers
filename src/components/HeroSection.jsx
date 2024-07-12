@@ -390,11 +390,11 @@ const HeroSection = ({ myData }) => {
                 alt="hero-section-photo"
                 className="img-style"
               />
-              <img
+              {/* <img
                 src="../images/Animation.gif"
                 alt="Animation"
                 className="animation-style"
-              />
+              /> */}
             </figure>
           </div>
         </div>

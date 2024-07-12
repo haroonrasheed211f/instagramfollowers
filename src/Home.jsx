@@ -1,12 +1,14 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
-import Services from "./components/Services";
+
 import Trusted from "./components/Trusted";
 import ServicesDropDown from "./components/ServicesDropDown";
 import BestServices from "./components/BestServices";
 import ServicesWeOffer from "./components/ServicesWeOffer";
 import PackageTime from "./components/PackageTime";
 import VideoCarousel from "./components/VideoCarousel";
+import Faqs from "./components/Faqs";
+import Slide from "./components/Slide";
 
 const Home = () => {
   const data = {
@@ -25,11 +27,12 @@ const Home = () => {
       <HeroSection myData={data} />
       <Trusted />
       <ServicesDropDown />
-      <Services />
       <BestServices />
       <ServicesWeOffer />
       <PackageTime />
       <VideoCarousel />
+      <Slide />
+      <Faqs />
     </>
   );
 };

@@ -23,9 +23,9 @@ const Card = () => {
         ))}
       </div>
       <div className="text-center text-3xl mb-4">$1.38</div>
-      <button className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white py-2 px-4 rounded w-full">
+      <Button className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white py-2 px-4 rounded w-full">
         Order Now
-      </button>
+      </Button>
     </div>
   );
 };

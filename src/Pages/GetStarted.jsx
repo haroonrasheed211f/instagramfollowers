@@ -1,6 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { Button } from "../styles/Button";
 
 const GetStarted = () => {
   return (
@@ -61,17 +62,14 @@ background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, F
               Send me special promotions and discounts
             </label>
           </div>
-          <button
-            type="submit"
-            className="w-full bg-orange-500 text-white font-bold py-3 rounded-lg transition duration-300 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500"
-          >
+          <Button type="submit" className="w-full ">
             Continue
-          </button>
+          </Button>
         </form>
       </div>
       <div className="ml-8 p-8">
         <div className="text-center mb-4">
-          <span className="text-2xl text-orange-500">
+          <span className="text-2xl text-orange-500 flex justify-center">
             <i className="fas fa-star">
               <FaStar className="icons" />
             </i>
@@ -89,12 +87,12 @@ background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, F
             </i>
           </span>
         </div>
-        <p className="text-gray-700 text-lg mb-4 ">
+        <p className="text-gray-700 text-center mb-4 ">
           “Among the most respected names in the niche of buying Instagram
           followers and likes, Twicsy has a very easy to use and accessible
           platform.”
         </p>
-        <p className="text-lg font-semibold">— Deccan Herald</p>
+        <p className="text-center font-semibold">— Deccan Herald</p>
         <img
           src="./images/hero.jpg"
           alt="Deccan Herald"

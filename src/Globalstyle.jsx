@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
 html {
   font-size: 62.5%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   /* 1rem = 10px */
   overflow-x: hidden;
 }
@@ -95,6 +95,12 @@ ${"" /* resuable code section  */}
 .container {
   max-width: 120rem;
   margin: 0 auto;
+ 
+}
+.cyber{
+  padding: 90px 0 70px;
+    position: relative;
+    z-index: 5;
 }
 .customcontainer{
   width: 50rem;

@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
-import Services from "./components/Services";
+import Services from "./components/Faqs";
 import Trusted from "./components/Trusted";
 
 const Threads = () => {
