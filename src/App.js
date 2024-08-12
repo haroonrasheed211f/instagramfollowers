@@ -1,19 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Tiktok from "./Tiktok";
-import Contact from "./Contact";
-import Singleproduct from "./Singleproduct";
+
+import Contact from "./Pages/Contact";
 import { GlobalStyle } from "./Globalstyle";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
 import "./App.css";
 import Footer from "./components/Footer";
-import Otherservices from "./Otherservices";
-import Threads from "./Threads";
-import InstagramComments from "./Pages/BuyFollowers";
 import BuyFollowers from "./Pages/BuyFollowers";
 import GetStarted from "./Pages/GetStarted";
+import Tiktok from "./Pages/Tiktok";
+import Threads from "./Pages/Threads";
+import Otherservices from "./Pages/Otherservices";
+import Home from "./Pages/Home";
 
 const App = () => {
   const theme = {
@@ -26,8 +25,7 @@ const App = () => {
       btn: "rgb(98 84 243)",
       border: "rgba(98,84,243,0.5)",
       hr: "#ffffff",
-      gradient:
-        "linear-gradient(0deg,rgb(132 144 255) 0% rgb(98 189 252) 100%)",
+
       shadow:
         "rgba(0,0,0,0.02) 0px 1px 3px 0px,rgba(27,31,35,0.15) 0px 0px 0px 1px",
       shadowSupport: "rgba(0,0,0,0.16) 0px 1px 4px",
@@ -48,7 +46,6 @@ const App = () => {
           <Route path="/threads" element={<Threads />} />
           <Route path="/otherservices" element={<Otherservices />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/singleproduct/:id" element={<Singleproduct />} />
           <Route path="/buy" element={<BuyFollowers />} />
           <Route path="/getstarted" element={<GetStarted />} />
         </Routes>

@@ -1,7 +1,7 @@
 import React from "react";
-import HeroSection from "./components/HeroSection";
-import Services from "./components/Faqs";
-import Trusted from "./components/Trusted";
+import HeroSection from "../components/HeroSection";
+import Faqs from "../components/Faqs";
+import Trusted from "../components/Trusted";
 
 const Otherservices = () => {
   const data = {
@@ -18,7 +18,7 @@ const Otherservices = () => {
     <>
       <HeroSection myData={data} />
       <Trusted />
-      <Services />
+      <Faqs />
     </>
   );
 };

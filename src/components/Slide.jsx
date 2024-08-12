@@ -13,8 +13,8 @@ import "swiper/css/effect-coverflow";
 
 const Slide = () => {
   return (
-    <div className="container relative py-10">
-      <h2 className="text-center text-2xl font-bold mb-8">
+    <div className="container relative min-h-screen ">
+      <h2 className="text-center text-6xl font-bold mb-24">
         Here's what our customers say
       </h2>
       <Swiper
@@ -38,7 +38,7 @@ const Slide = () => {
         modules={[EffectCoverflow, Navigation]}
       >
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B01}
               alt="testimonial"
@@ -50,7 +50,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B02}
               alt="testimonial"
@@ -62,7 +62,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B03}
               alt="testimonial"
@@ -74,7 +74,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B04}
               alt="testimonial"
@@ -86,7 +86,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B05}
               alt="testimonial"
@@ -98,7 +98,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B04}
               alt="testimonial"
@@ -110,7 +110,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B05}
               alt="testimonial"
@@ -122,7 +122,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B04}
               alt="testimonial"
@@ -134,7 +134,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B05}
               alt="testimonial"
@@ -146,7 +146,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B04}
               alt="testimonial"
@@ -158,7 +158,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <div className="relative w-64 h-96">
+          <div className="relative w-80 h-100">
             <img
               src={B05}
               alt="testimonial"

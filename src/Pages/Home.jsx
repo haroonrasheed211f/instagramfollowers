@@ -1,15 +1,12 @@
 import React from "react";
-import HeroSection from "./components/HeroSection";
-
-import Trusted from "./components/Trusted";
-import ServicesDropDown from "./components/ServicesDropDown";
-import BestServices from "./components/BestServices";
-import ServicesWeOffer from "./components/ServicesWeOffer";
-import PackageTime from "./components/PackageTime";
-import VideoCarousel from "./components/VideoCarousel";
-import Faqs from "./components/Faqs";
-import Slide from "./components/Slide";
-
+import HeroSection from "../components/HeroSection";
+import Trusted from "../components/Trusted";
+import BestServices from "../components/BestServices";
+import ServicesWeOffer from "../components/ServicesWeOffer";
+import PackageTime from "../components/PackageTime";
+import Slide from "../components/Slide";
+import Faqs from "../components/Faqs";
+import ServicesDropDown from "../components/ServicesDropDown";
 const Home = () => {
   const data = {
     name: "Instagram Services",
@@ -30,7 +27,6 @@ const Home = () => {
       <BestServices />
       <ServicesWeOffer />
       <PackageTime />
-      <VideoCarousel />
       <Slide />
       <Faqs />
     </>

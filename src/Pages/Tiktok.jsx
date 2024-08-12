@@ -1,6 +1,6 @@
 import React from "react";
-import HeroSection from "./components/HeroSection";
-import BuyFollowers from "./Pages/BuyFollowers";
+import HeroSection from "../components/HeroSection";
+import BuyFollowers from "./BuyFollowers";
 
 const Tiktok = () => {
   const data = {
